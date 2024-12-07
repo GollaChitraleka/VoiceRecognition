@@ -197,6 +197,7 @@ function App() {
 
           {/* Gamified Certification Route */}
           <Route path="/game-certification" element={<GamifiedCertification />} />  {/* Add the GamifiedCertification route */}
+          <Route path="/dynamic-certificate" element={<DynamicCertificate />} /> 
         </Routes> 
       </main> 
       <Footer /> 

@@ -13,7 +13,7 @@ function GamifiedCertification() {
         <div className="space-x-6"> 
           {/* Certification Game Links */}
           <Link 
-            to="/game-certification" 
+            to="/startcertification" 
             className="text-white border border-white px-6 py-3 rounded-full hover:bg-sky-600 hover:text-black transition"
           > 
             Start Certification 
