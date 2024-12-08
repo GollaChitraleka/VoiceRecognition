@@ -1,4 +1,4 @@
-import React from "react";  // Keep this line (line 11)
+import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./index.css";
@@ -6,7 +6,6 @@ import Fruit from "./app/Features/Education/fruit/Fruit";
 import Biologygame from "./app/Features/Education/biologygame/Biologygame";
 import Mathgame from "./app/Features/Education/mathgame/Mathgame";
 import GamifiedCertification from "./app/Features/GamifiedCertification/GamifiedCertification";
-import Chatbot from "./app/Features/Chatbot/Chatbot";
 import reportWebVitals from "./app/reportWebVitals";
 
 // Navbar Component
@@ -18,7 +17,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-sky-500 text-white flex items-center justify-between py-4 px-6 shadow-md fixed w-full top-0 z-50">
+    <nav className="bg-sky-500 text-white flex items-center justify-between py-4 px-6 shadow-md">
       {/* Logo */}
       <div className="flex items-center">
         <img src="/logo.png" alt="App Logo" className="w-12 h-12 mr-3" />
@@ -74,7 +73,7 @@ function Navbar() {
 // Hero Section Component
 function HeroSection() {
   return (
-    <div className="bg-black text-white py-10 px-6 text-center mt-24">
+    <div className="bg-black text-white py-10 px-6 text-center">
       <h2 className="text-3xl font-bold mb-4">Skills Development Games</h2>
       <p className="text-gray-300 max-w-2xl mx-auto">
         With our curated selection of educational games, you can train memory,
@@ -176,55 +175,40 @@ function EducationPage() {
 // Footer Component
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-6 text-center mt-auto">
+    <footer className="bg-gray-800 text-white py-6 text-center">
       <p>&copy; 2024 Skill Learning Hub. All rights reserved.</p>
       <p>Designed for enhancing learning experiences through innovation.</p>
     </footer>
   );
 }
 
-// Chatbot Icon Component
-function ChatbotIcon() {
-  return (
-    <div className="fixed bottom-6 right-6 z-50">
-      <Link
-        to="/chatbot"
-        className="border border-green-500 text-green-500 rounded-full px-6 py-3 shadow-md hover:bg-green-500 hover:text-white transition duration-300 ease-in-out"
-      >
-        Chatbot
-      </Link>
-    </div>
-  );
-}
-
-// App Component
+// Main App Component
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <HeroSection />
-                  <MiddlePart />
-                </>
-              }
-            />
-            <Route path="/education" element={<EducationPage />} />
-            <Route path="/biologygame" element={<Biologygame />} />
-            <Route path="/mathgame" element={<Mathgame />} />
-            <Route path="/fruit" element={<Fruit />} />
-            <Route path="/game-certification" element={<GamifiedCertification />} />
-            <Route path="/chatbot" element={<Chatbot />} />
-          </Routes>
-        </main>
-        <Footer />
-        <ChatbotIcon />
-      </div>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <MiddlePart />
+              </>
+            }
+          />
+          <Route path="/education" element={<EducationPage />} />
+          <Route path="/biologygame" element={<Biologygame />} />
+          <Route path="/mathgame" element={<Mathgame />} />
+          <Route path="/fruit" element={<Fruit />} />
+          <Route
+            path="/game-certification"
+            element={<GamifiedCertification />}
+          />
+        </Routes>
+      </main>
+      <Footer />
     </Router>
   );
 }
