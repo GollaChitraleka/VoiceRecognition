@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/VoiceRecognition/static/css/main.4929f1e5.css",
+    "main.js": "/VoiceRecognition/static/js/main.47472029.js",
+    "static/js/213.fa0acf76.chunk.js": "/VoiceRecognition/static/js/213.fa0acf76.chunk.js",
+    "static/js/732.e544f240.chunk.js": "/VoiceRecognition/static/js/732.e544f240.chunk.js",
+    "index.html": "/VoiceRecognition/index.html",
+    "main.4929f1e5.css.map": "/VoiceRecognition/static/css/main.4929f1e5.css.map",
+    "main.47472029.js.map": "/VoiceRecognition/static/js/main.47472029.js.map",
+    "213.fa0acf76.chunk.js.map": "/VoiceRecognition/static/js/213.fa0acf76.chunk.js.map",
+    "732.e544f240.chunk.js.map": "/VoiceRecognition/static/js/732.e544f240.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4929f1e5.css",
+    "static/js/main.47472029.js"
+  ]
+}
