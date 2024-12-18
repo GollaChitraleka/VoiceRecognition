@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# VoiceRecognition
+Voice-controlled gaming tools enhance learning by simulating real-world tasks, offering instant feedback, and providing personalized, inclusive experiences. With gamified assessments and AI-driven adaptability, these scalable tools make education engaging, immersive, and effective for practical skill development.
+>>>>>>> upstream/main
